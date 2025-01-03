@@ -1,0 +1,31 @@
+nav a {
+  position: relative;
+  color: inherit; /* Keep the text color as defined */
+  text-decoration: none; /* Remove default underlines */
+}
+
+nav a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: grey; /* Grey underline */
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+nav a::after {
+  content: ''; /* Invisible underline to maintain spacing */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: grey;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
