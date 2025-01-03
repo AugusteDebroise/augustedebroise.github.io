@@ -1,4 +1,4 @@
 ---
-layout: publications
-title: "Work in progress"
+layout: research
+title: "Research"
 ---
