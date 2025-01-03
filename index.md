@@ -2,9 +2,6 @@
 layout: home
 title: "Home"
 ---
+My research area spans from media, political and gender economics. I am particularly interested in the impact of media —both social media and the cinema industry— on societal issues such as gender inequality and political outcomes. Methodologically, I specialize in text analysis to qualitatively assess the content of the media I study.
 
-
-
-This theme allows an academic person to showcase their research interests, publications, research group, curriculum vitae, any courses that they may be teaching, or anything else they may want to put out into the world.
-
-Academics can use this home page to describe their research interests, display their latest publications, or provide an introduction to their research group.
+Here is my [CV](assets/cv/Auguste_Debroise_CV_JULY_2024.pdf).
