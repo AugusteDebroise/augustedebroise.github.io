@@ -32,6 +32,7 @@
 </div>
 -->
 
+<!--
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Work in progress</h3>
@@ -46,6 +47,7 @@
     {% endif %}
   </div>
 </div>
+-->
 
 <!--
 <div class="row g-5 mb-5">
@@ -64,3 +66,40 @@
 </div>
 -->
 
+<div class="pub">
+  <div class="pub-meta">
+    <div class="pub-year">{{ item.year }}</div>
+    <div class="pub-venue">{{ item.venue }}</div>
+  </div>
+
+  <div class="pub-body">
+    <h3 class="pub-title">{{ item.title }}</h3>
+    <div class="pub-authors">{{ item.authors }}</div>
+
+    <div class="pub-links">
+      {% assign L = item.links %}
+      {% if L.paper %}<a class="badge" href="{{ L.paper }}">Paper</a>{% endif %}
+      {% if L.preprint %}<a class="badge" href="{{ L.preprint }}">Pre-print</a>{% endif %}
+      {% if L.code %}<a class="badge" href="{{ L.code }}">Code</a>{% endif %}
+      {% if L.slides %}<a class="badge" href="{{ L.slides }}">Slides</a>{% endif %}
+      {% if L.video %}<a class="badge" href="{{ L.video }}">Presentation</a>{% endif %}
+      {% if L.tweet %}<a class="badge" href="{{ L.tweet }}">Tweet</a>{% endif %}
+    </div>
+
+    {% if item.media and item.media.size > 0 %}
+    <div class="pub-media">
+      <span>Media Coverage:</span>
+      {% for m in item.media %}
+        <a href="{{ m.url }}">{{ m.name }}</a>{% unless forloop.last %}&nbsp;&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if item.image %}
+  <div class="pub-thumb">
+    <img src="{{ item.image }}" alt="thumbnail for {{ item.title }}">
+  </div>
+  {% endif %}
+</div>
+<hr class="pub-sep">
