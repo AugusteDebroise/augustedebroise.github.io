@@ -66,40 +66,33 @@
 </div>
 -->
 
-<div class="pub">
-  <div class="pub-meta">
-    <div class="pub-year">{{ item.year }}</div>
-    <div class="pub-venue">{{ item.venue }}</div>
-  </div>
+<p>For a complete list, check <a href="https://scholar.google.com">Google Scholar</a>.</p>
+<hr>
 
-  <div class="pub-body">
-    <h3 class="pub-title">{{ item.title }}</h3>
-    <div class="pub-authors">{{ item.authors }}</div>
+{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign years = "" | split: "" %}
+{% for p in pubs %}
+  {% unless years contains p.year %}{% assign years = years | push: p.year %}{% endunless %}
+{% endfor %}
 
-    <div class="pub-links">
-      {% assign L = item.links %}
-      {% if L.paper %}<a class="badge" href="{{ L.paper }}">Paper</a>{% endif %}
-      {% if L.preprint %}<a class="badge" href="{{ L.preprint }}">Pre-print</a>{% endif %}
-      {% if L.code %}<a class="badge" href="{{ L.code }}">Code</a>{% endif %}
-      {% if L.slides %}<a class="badge" href="{{ L.slides }}">Slides</a>{% endif %}
-      {% if L.video %}<a class="badge" href="{{ L.video }}">Presentation</a>{% endif %}
-      {% if L.tweet %}<a class="badge" href="{{ L.tweet }}">Tweet</a>{% endif %}
-    </div>
-
-    {% if item.media and item.media.size > 0 %}
-    <div class="pub-media">
-      <span>Media Coverage:</span>
-      {% for m in item.media %}
-        <a href="{{ m.url }}">{{ m.name }}</a>{% unless forloop.last %}&nbsp;&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
+{% for y in years %}
+  <h2 class="year-header">{{ y }}</h2>
+  {% for item in pubs %}
+    {% if item.year == y %}
+      {% include publication.html item=item %}
     {% endif %}
-  </div>
+  {% endfor %}
+{% endfor %}
 
-  {% if item.image %}
-  <div class="pub-thumb">
-    <img src="{{ item.image }}" alt="thumbnail for {{ item.title }}">
-  </div>
-  {% endif %}
-</div>
-<hr class="pub-sep">
+{% if site.data.wip and site.data.wip.size > 0 %}
+  <h2 class="year-header">Work in Progress</h2>
+  <ul class="wip-list">
+  {% for w in site.data.wip %}
+    <li>
+      <strong>{{ w.title }}</strong>
+      {% if w.authors %} — <span class="wip-authors">{{ w.authors }}</span>{% endif %}
+      {% if w.note %} <em>{{ w.note }}</em>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+{% endif %}

@@ -1,5 +1,5 @@
 ---
-layout: publications
+layout: research
 title: "Research"
-permalink: /research/
+
 ---
