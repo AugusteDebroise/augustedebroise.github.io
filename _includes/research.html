@@ -32,7 +32,7 @@
 </div>
 -->
 
-<!--
+
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Work in progress</h3>
@@ -47,7 +47,7 @@
     {% endif %}
   </div>
 </div>
--->
+
 
 <!--
 <div class="row g-5 mb-5">
@@ -66,33 +66,4 @@
 </div>
 -->
 
-<p>For a complete list, check <a href="https://scholar.google.com">Google Scholar</a>.</p>
-<hr>
 
-{% assign pubs = site.data.publications | sort: "year" | reverse %}
-{% assign years = "" | split: "" %}
-{% for p in pubs %}
-  {% unless years contains p.year %}{% assign years = years | push: p.year %}{% endunless %}
-{% endfor %}
-
-{% for y in years %}
-  <h2 class="year-header">{{ y }}</h2>
-  {% for item in pubs %}
-    {% if item.year == y %}
-      {% include publication.html item=item %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% if site.data.wip and site.data.wip.size > 0 %}
-  <h2 class="year-header">Work in Progress</h2>
-  <ul class="wip-list">
-  {% for w in site.data.wip %}
-    <li>
-      <strong>{{ w.title }}</strong>
-      {% if w.authors %} — <span class="wip-authors">{{ w.authors }}</span>{% endif %}
-      {% if w.note %} <em>{{ w.note }}</em>{% endif %}
-    </li>
-  {% endfor %}
-  </ul>
-{% endif %}
