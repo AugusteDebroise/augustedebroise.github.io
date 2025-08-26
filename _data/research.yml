@@ -9,9 +9,20 @@ featured_WP:
 #- {name: 'TEST shear diffusion central schemes for particle methods. Jonathan Panuelos, James Wadsley, Nicholas Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
 
 featured_WorkInProgress:
-- {name: 'Negative campaigning and strategic voting, with B. Decerf'}
-- {name: 'The social image cost of motherhood. Evidence from the movie industry. with C. Cassan and C. Landais [slides available upon request]'}
-- {name: 'Moral Values in US Gubernatorial Elections'}
+  - title: "The social image cost of motherhood. Evidence from the movie industry."
+    authors: "with C. Cassan and C. Landais"
+    year: 2025
+    note: "[slides available upon request]"
+    links:
+      draft:
+      slides:
+      code:
+      video:
+    image: "/assets/img/pubs/motherhood.jpg"
+
+  - title: "Negative campaigning and strategic voting"
+    authors: "with B. Decerf"
+    year: 2025
 
 featured__Policy:
 #- {name: 'Negative campaigning and strategic voting, with B. Decerf'}
@@ -29,25 +40,19 @@ index_WP:
 #- {name: 'Shock interactions, turbulence and the origin of the stellar mass spectrum. Ralph E. Pudritz and N. K.-R. Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf'}
 #- {name: 'TEST shear diffusion central schemes for particle methods. Jonathan Panuelos, James Wadsley, Nicholas Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
 
-index_WorkInProgress:
-- {name: 'Negative campaigning and strategic voting, with B. Decerf'}
-- {name: 'The social image cost of motherhood. Evidence from the movie industry. with C. Cassan and C. Landais [slides available upon request]'}
-- {name: 'Moral Values in US Gubernatorial Elections'}
-- year: 2025
-  venue: "WebSci"
-  title: "The Effects of Enterprise Social Media on Communication Networks"
-  authors: "Manoel Horta Ribeiro, Teny Shapiro, Siddharth Suri"
-  links:
-    paper:
-    preprint: "https://arxiv.org/abs/xxxx.xxxxx"
-    code:
-    slides:
-    video:
-    tweet:
-  media:
-    - {name: "Fast Company", url: "https://www.fastcompany.com/..."}
-  image: "/assets/img/pubs/enterprise_social_media.png"
 
+index_WorkInProgress:
+  - title: "Negative campaigning and strategic voting"
+    authors: "with B. Decerf"
+    year: 2025
+
+  - title: "The social image cost of motherhood. Evidence from the movie industry."
+    authors: "with C. Cassan and C. Landais"
+    year: 2025
+    note: "[slides available upon request]"
+
+  - title: "Moral Values in US Gubernatorial Elections"
+    year: 2024
 index_Policy:
 #- {name: 'Negative campaigning and strategic voting, with B. Decerf'}
 #- {name: 'The social image cost of motherhood. Evidence from the movie industry. with C. Cassan and C. Landais'}
