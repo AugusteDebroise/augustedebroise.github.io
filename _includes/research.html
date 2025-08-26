@@ -32,7 +32,7 @@
 </div>
 -->
 
-
+<!--
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Work in progress</h3>
@@ -47,7 +47,7 @@
     {% endif %}
   </div>
 </div>
-
+-->
 
 <!--
 <div class="row g-5 mb-5">
@@ -66,4 +66,123 @@
 </div>
 -->
 
+{%- comment -%}
+WORK IN PROGRESS (WIP) SECTION
+- Home (page.title == "Home"): show featured_WorkInProgress
+- Other pages (e.g. /research): show index_WorkInProgress grouped by year
+Data source: _data/research.yml
+  - featured_WorkInProgress: [ {title|name, authors?, year?, note?, image?, url?, links?{draft,slides,code,video}} ]
+  - index_WorkInProgress: same shape
+{%- endcomment -%}
+
+{%- assign on_home = page.title == "Home" -%}
+{%- if on_home -%}
+  {%- assign items = site.data.research.featured_WorkInProgress -%}
+{%- else -%}
+  {%- assign items = site.data.research.index_WorkInProgress -%}
+{%- endif -%}
+
+{%- if items and items.size > 0 -%}
+  <div class="row g-5 mb-5">
+    <div class="col-md-12">
+      <h3 class="fw-bold border-bottom pb-3 mb-4">Work in progress</h3>
+
+      {%- if on_home -%}
+        {%- comment -%}Simple list on Home, newest first if year exists{%- endcomment -%}
+        {%- assign has_year = items | where_exp: "i", "i.year" -%}
+        {%- if has_year.size > 0 -%}
+          {%- assign sorted = items | sort: "year" | reverse -%}
+        {%- else -%}
+          {%- assign sorted = items -%}
+        {%- endif -%}
+
+        {%- for item in sorted -%}
+          <div class="wip">
+            {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
+
+            <div class="wip-body">
+              <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
+              {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
+              {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
+
+              {% assign L = item.links %}
+              <div class="wip-links">
+                {% if L and L.draft %}<a class="badge" href="{{ L.draft }}">Draft</a>{% endif %}
+                {% if L and L.slides %}<a class="badge" href="{{ L.slides }}">Slides</a>{% endif %}
+                {% if L and L.code %}<a class="badge" href="{{ L.code }}">Code</a>{% endif %}
+                {% if L and L.video %}<a class="badge" href="{{ L.video }}">Video</a>{% endif %}
+                {% if item.url and (not L) %}<a class="badge" href="{{ item.url }}">Link</a>{% endif %}
+              </div>
+            </div>
+
+            <div class="wip-meta">{% if item.year %}<span class="wip-year">{{ item.year }}</span>{% endif %}</div>
+          </div>
+          <hr class="wip-sep">
+        {%- endfor -%}
+
+      {%- else -%}
+        {%- comment -%}Full page: group by year, newest first{%- endcomment -%}
+        {%- assign years = items | map: "year" | compact | uniq | sort | reverse -%}
+        {%- if years.size > 0 -%}
+          {%- for y in years -%}
+            <h2 class="year-header">{{ y }}</h2>
+            {%- for item in items -%}
+              {%- if item.year == y -%}
+                <div class="wip">
+                  {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
+
+                  <div class="wip-body">
+                    <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
+                    {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
+                    {% if item.abstract %}<div class="wip-abstract">{{ item.abstract }}</div>{% endif %}
+                    {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
+
+                    {% assign L = item.links %}
+                    <div class="wip-links">
+                      {% if L and L.draft %}<a class="badge" href="{{ L.draft }}">Draft</a>{% endif %}
+                      {% if L and L.slides %}<a class="badge" href="{{ L.slides }}">Slides</a>{% endif %}
+                      {% if L and L.code %}<a class="badge" href="{{ L.code }}">Code</a>{% endif %}
+                      {% if L and L.video %}<a class="badge" href="{{ L.video }}">Video</a>{% endif %}
+                      {% if item.url and (not L) %}<a class="badge" href="{{ item.url }}">Link</a>{% endif %}
+                    </div>
+                  </div>
+
+                  <div class="wip-meta">{% if item.year %}<span class="wip-year">{{ item.year }}</span>{% endif %}</div>
+                </div>
+                <hr class="wip-sep">
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        {%- else -%}
+          {%- comment -%}If no years provided, just list them{%- endcomment -%}
+          {%- for item in items -%}
+            <div class="wip">
+              {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
+              <div class="wip-body">
+                <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
+                {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
+                {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
+                {% if item.links %}
+                  {% assign L = item.links %}
+                  <div class="wip-links">
+                    {% if L.draft %}<a class="badge" href="{{ L.draft }}">Draft</a>{% endif %}
+                    {% if L.slides %}<a class="badge" href="{{ L.slides }}">Slides</a>{% endif %}
+                    {% if L.code %}<a class="badge" href="{{ L.code }}">Code</a>{% endif %}
+                    {% if L.video %}<a class="badge" href="{{ L.video }}">Video</a>{% endif %}
+                  </div>
+                {% elsif item.url %}
+                  <div class="wip-links"><a class="badge" href="{{ item.url }}">Link</a></div>
+                {% endif %}
+              </div>
+            </div>
+            <hr class="wip-sep">
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endif -%}
+
+    </div>
+  </div>
+{%- else -%}
+  <div class="row g-5 mb-5"><div class="col-md-12"><p class="text-muted">No work in progress to display yet.</p></div></div>
+{%- endif -%}
 
