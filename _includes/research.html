@@ -91,14 +91,21 @@ Data source: _data/research.yml
               {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
               {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
 
-              {% if item.abstract %}
-                <details class="wip-abstract">
-                  <summary class="badge">Abstract</summary>
+              {%- assign abs = item.abstract | default: item.abs | default: item.summary -%}
+
+              <details class="wip-abstract">
+                <summary class="badge">Abstract</summary>
+
+                {%- if abs and abs != "" -%}
                   <div class="wip-abstract-content">
-                    {{ item.abstract | markdownify }}
+                    {{ abs | markdownify }}
                   </div>
-                </details>
-              {% endif %}
+                {%- else -%}
+                  <div class="wip-abstract-content text-muted">
+                    No abstract available yet.
+                  </div>
+                {%- endif -%}
+              </details>
 
               {% assign L = item.links %}
               <div class="wip-links">
@@ -132,14 +139,21 @@ Data source: _data/research.yml
                     <!--{% if item.abstract %}<div class="wip-abstract">{{ item.abstract }}</div>{% endif %}-->
                     {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
                     
-                    {% if item.abstract %}
-                      <details class="wip-abstract">
-                        <summary class="badge">Abstract</summary>
+                    {%- assign abs = item.abstract | default: item.abs | default: item.summary -%}
+
+                    <details class="wip-abstract">
+                      <summary class="badge">Abstract</summary>
+
+                      {%- if abs and abs != "" -%}
                         <div class="wip-abstract-content">
-                          {{ item.abstract | markdownify }}
+                          {{ abs | markdownify }}
                         </div>
-                      </details>
-                    {% endif %}
+                      {%- else -%}
+                        <div class="wip-abstract-content text-muted">
+                          No abstract available yet.
+                        </div>
+                      {%- endif -%}
+                    </details>
 
                     {% assign L = item.links %}
                     <div class="wip-links">
