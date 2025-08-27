@@ -73,7 +73,7 @@ nav a:hover::after {
 .wip-thumb img {
   display: block;
   width: 100%;
-  height: 220px;        /* increase to taste */
+  height: 200px;        /* increase to taste */
   object-fit: contain;  /* no crop */
   object-position: top; /* push image content to the top of the box */
   border-radius: 6px;
@@ -81,6 +81,12 @@ nav a:hover::after {
 
 /* Make sure the title has no top margin */
 .wip-title { margin: 0 0 .25rem; }
+
+.section-title {
+  border-bottom: 3px solid #bbb;  /* thickness + color */
+  padding-bottom: .75rem;         /* space between text and line */
+  margin-bottom: 1.25rem;         /* space below the line */
+}
 
 /* Optional: bump size further on larger screens 
 @media (min-width: 992px) {
