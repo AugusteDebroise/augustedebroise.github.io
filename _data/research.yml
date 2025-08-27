@@ -4,25 +4,33 @@ featured_Publication:
 #- {name: 'TEST shear diffusion central schemes for particle methods. Jonathan Panuelos, James Wadsley, Nicholas Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
 
 featured_WP:
-#- {name: 'Testing General Relativity with Present and Future Astrophysical Observations. Emanuele Berti (Mississippi U. and Lisbon, CENTRA), Enrico Barausse (Paris, Inst. Astrophys. and Paris U., VI-VII), Vitor Cardoso (Lisbon, IST and Perimeter Inst. Theor. Phys. and Lisbon, CENTRA), Leonardo Gualtieri (Rome U. and INFN, Rome), Paolo Pani (Rome U. and INFN, Rome and Lisbon, IST and Lisbon, CENTRA) et al.', url: '/publications/1501.07274.pdf'}
-#- {name: 'Shock interactions, turbulence and the origin of the stellar mass spectrum. Ralph E. Pudritz and N. K.-R. Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf'}
-#- {name: 'TEST shear diffusion central schemes for particle methods. Jonathan Panuelos, James Wadsley, Nicholas Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
-
-featured_WorkInProgress:
   - title: "The social image cost of motherhood. Evidence from the movie industry."
-    authors: "with C. Cassan and C. Landais"
+    authors: "with G. Cassan and C. Landais"
     year: 2025
-    note: "[slides available upon request]"
+    note: "[slides available upon request][paper available upon request]"
     links:
       draft:
       slides:
       code:
       video:
-    image: "/assets/img/pubs/motherhood.jpg"
+    image: "/assets/img/pubs/DESCRIPTION_NB_ARTICLE_PARENT_50.pdf"
 
-  - title: "Negative campaigning and strategic voting"
-    authors: "with B. Decerf"
-    year: 2025
+  - title: "Moral Values in US Gubernatorial Elections"
+    authors: ""
+    year: 2024
+    note: "[paper available upon request]"
+    links:
+      draft:
+      slides:
+      code:
+      video:
+    image: "/assets/img/pubs/demand_supply_match_CORRECT.pdf"
+
+
+featured_WorkInProgress:
+- {name: 'Negative campaigning and strategic voting, with B. Decerf'}
+- {name: 'Hollywood and gender norms in the United States, with G. Cassan'}
+
 
 featured__Policy:
 #- {name: 'Negative campaigning and strategic voting, with B. Decerf'}
@@ -47,7 +55,7 @@ index_WorkInProgress:
     year: 2025
 
   - title: "The social image cost of motherhood. Evidence from the movie industry."
-    authors: "with C. Cassan and C. Landais"
+    authors: "with G. Cassan and C. Landais"
     year: 2025
     note: "[slides available upon request]"
 
