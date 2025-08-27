@@ -155,3 +155,19 @@ pre, code, .highlight {
 /* Lines and section underlines to match the palette */
 hr, .wip-sep { border-top: 2px solid var(--beige-border); }
 .section-title { border-bottom: 3px solid var(--beige-border); }
+
+
+
+:root{
+  /* Make Garamond the default font everywhere */
+  --bs-font-sans-serif: 'EB Garamond', Garamond, 'Adobe Garamond Pro', 'Garamond Premier Pro', Georgia, serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+html, body { font-family: var(--bs-body-font-family); }
+
+/* Headings can be a bit heavier on Garamond */
+h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+
+/* Keep code blocks monospaced */
+code, kbd, pre, samp { font-family: var(--bs-font-monospace); }
