@@ -33,21 +33,6 @@
 -->
 
 
-<div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Work in progress</h3>
-    {% if page.title == "Home" %}
-      {% for item in site.data.research.featured_WorkInProgress %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% else %}
-      {% for item in site.data.research.index_WorkInProgress %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% endif %}
-  </div>
-</div>
-
 
 <!--
 <div class="row g-5 mb-5">
@@ -85,7 +70,7 @@ Data source: _data/research.yml
 {%- if items and items.size > 0 -%}
   <div class="row g-5 mb-5">
     <div class="col-md-12">
-      <h3 class="fw-bold border-bottom pb-3 mb-4">Work in progress</h3>
+      <h3 class="fw-bold border-bottom pb-3 mb-4">Working papers</h3>
 
       {%- if on_home -%}
         {%- comment -%}Simple list on Home, newest first if year exists{%- endcomment -%}
@@ -186,3 +171,19 @@ Data source: _data/research.yml
   <div class="row g-5 mb-5"><div class="col-md-12"><p class="text-muted">No work in progress to display yet.</p></div></div>
 {%- endif -%}
 
+
+
+<div class="row g-5 mb-5">
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Work in progress</h3>
+    {% if page.title == "Home" %}
+      {% for item in site.data.research.featured_WorkInProgress %}
+        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+      {% endfor %}
+    {% else %}
+      {% for item in site.data.research.index_WorkInProgress %}
+        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
