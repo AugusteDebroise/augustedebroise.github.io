@@ -91,6 +91,15 @@ Data source: _data/research.yml
               {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
               {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
 
+              {% if item.abstract %}
+                <details class="wip-abstract">
+                  <summary class="badge">Abstract</summary>
+                  <div class="wip-abstract-content">
+                    {{ item.abstract | markdownify }}
+                  </div>
+                </details>
+              {% endif %}
+
               {% assign L = item.links %}
               <div class="wip-links">
                 {% if L and L.draft %}<a class="badge" href="{{ L.draft }}">Draft</a>{% endif %}
@@ -120,8 +129,17 @@ Data source: _data/research.yml
                   <div class="wip-body">
                     <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
                     {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
-                    {% if item.abstract %}<div class="wip-abstract">{{ item.abstract }}</div>{% endif %}
+                    <!--{% if item.abstract %}<div class="wip-abstract">{{ item.abstract }}</div>{% endif %}-->
                     {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
+                    
+                    {% if item.abstract %}
+                      <details class="wip-abstract">
+                        <summary class="badge">Abstract</summary>
+                        <div class="wip-abstract-content">
+                          {{ item.abstract | markdownify }}
+                        </div>
+                      </details>
+                    {% endif %}
 
                     {% assign L = item.links %}
                     <div class="wip-links">

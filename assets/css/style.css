@@ -54,7 +54,7 @@ nav a:hover::after {
 /*.wip-sep { margin: 1rem 0; border: 0; border-top: 1px solid #eee; }*/
 .wip-sep {
   border: 0;
-  border-top: 2px solid #ccc;  /* bump thickness here (2–3px) */
+  border-top: 1px solid #ccc;  /* bump thickness here (2–3px) */
   margin: 1.25rem 0;           /* adjust vertical spacing */
   opacity: 1;                  /* override Bootstrap’s default .25 */
 }
@@ -83,10 +83,28 @@ nav a:hover::after {
 .wip-title { margin: 0 0 .25rem; }
 
 .section-title {
-  border-bottom: 3px solid #bbb;  /* thickness + color */
+  border-bottom: 2px solid #bbb;  /* thickness + color */
   padding-bottom: .75rem;         /* space between text and line */
   margin-bottom: 1.25rem;         /* space below the line */
 }
+
+/* Abstract toggle */
+.wip-abstract { margin-top: .5rem; }
+.wip-abstract summary.badge {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide default arrow/marker */
+.wip-abstract summary::-webkit-details-marker { display: none; }
+.wip-abstract summary { list-style: none; }
+
+/* Abstract content */
+.wip-abstract-content { margin-top: .5rem; font-size: .95rem; line-height: 1.45; }
+
+/* Optional: “active” look when open */
+.wip-abstract[open] summary.badge { border-color: #bbb; }
 
 /* Optional: bump size further on larger screens 
 @media (min-width: 992px) {

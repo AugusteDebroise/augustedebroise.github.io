@@ -8,6 +8,7 @@ featured_WP:
     authors: "with G. Cassan and C. Landais"
     year: 2025
     note: "[slides available upon request][paper available upon request]"
+    abstract: "In Western countries, gender inequality in the labor market is largely driven by the ”Child Penalty,” a phenomenon reflecting the unequal impact of parenthood on the professional trajectories of men and women. This paper explores how gender norms and cultural in- fluences contribute to the Child Penalty by analyzing the careers of individual actors and actresses within the cinema industry. In addition, we examine newspaper coverage of these individuals to better understand public perceptions and media portrayals. Our preliminary findings suggest that: i) actresses experience a significant child penalty compared to actors ii) even when controlling for career trajectories, actresses who become mothers tend to disappear from local media coverage iii) when actresses and actors are featured in the media, the language used to describe them changes differently with parenthood."
     links:
       draft:
       slides:
@@ -15,10 +16,23 @@ featured_WP:
       video:
     image: "/assets/img/DESCRIPTION_NB_ARTICLE_PARENT_50.jpeg"
 
+  - title: "Hollywood and gender norms in the United States"
+    authors: "with G. Cassan"
+    year: 2025
+    note: "[slides available upon request]"
+    abstract: "In this paper, we investigate the overall impact of exposure to theatrical movie releases on gender attitudes among U.S. citizens. We leverage weekly box office information to measure population-level exposure to different types of films, alongside geographic accessibility to theaters, to identify the effects of gender-progressive versus gender-conservative movies on public opinion regarding gender roles. Our findings show that greater exposure to gender-progressive films - relative to gender-conservative ones - is associated with more progressive views on gender roles among respondents to the General Social Survey (GSS). This effect is particularly pronounced among individuals with better access to movie theaters, suggesting that the observed shifts in opinion are driven by direct exposure to the films themselves."
+    links:
+      draft:
+      slides:
+      code:
+      video:
+    image: "/assets/img/Moving_sum_conservative_and_progressive.jpeg"
+
   - title: "Moral Values in US Gubernatorial Elections"
     authors: ""
     year: 2024
     note: "[paper available upon request]"
+    abstract: "In contemporary electoral dynamics, the traditional focus on income-based divi- sions is increasingly insufficient to fully understand the nuances of political trends. This shift has given rise to a ”sociocultural” axis of political conflict, as highlighted by Gethin et al. (2022). Within this context, a segment of the literature has concentrated on assessing the significance of morality in relation to this sociocultural axis. In this paper, I broaden the scope of research that leverages the universalism-particularism spectrum in political analysis. While existing studies have primarily focused on how the interaction between US voters’ moral preferences and politicians’ moral stances influences voting behavior between parties, this study introduces novel data on US gubernatorial candidates’ tweets to examine how this interaction impacts within-party dynamics. My findings suggest that the universalism-particularism continuum is a valuable tool for understanding electoral dynamics, both between and within political parties."
     links:
       draft:
       slides:
@@ -27,9 +41,10 @@ featured_WP:
     image: "/assets/img/demand_supply_match_CORRECT.jpeg"
 
 
+
+
 featured_WorkInProgress:
 - {name: 'Negative campaigning and strategic voting, with B. Decerf'}
-- {name: 'Hollywood and gender norms in the United States, with G. Cassan'}
 
 
 featured__Policy:
