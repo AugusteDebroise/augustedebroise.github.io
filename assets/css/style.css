@@ -171,3 +171,31 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; }
 
 /* Keep code blocks monospaced */
 code, kbd, pre, samp { font-family: var(--bs-font-monospace); }
+
+
+/* Remove the year column entirely */
+.wip-meta, .wip-year { display: none !important; }
+
+/* Two columns: text on the left, image on the right */
+.wip {
+  display: grid;
+  grid-template-columns: 1fr 320px;   /* text | image */
+  grid-template-areas: "body thumb";
+  gap: 1rem;
+  align-items: start;
+}
+
+.wip-body  { grid-area: body; }
+.wip-thumb { grid-area: thumb; }
+
+/* Responsive: stack with text first on mobile */
+@media (max-width: 768px) {
+  .wip {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "body"
+      "thumb";
+  }
+  .wip-thumb img,
+  .wip-thumb .wip-pdf { height: 220px; }
+}
