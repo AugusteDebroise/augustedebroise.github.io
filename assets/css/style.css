@@ -89,9 +89,14 @@ nav a:hover::after {
 }
 
 /* Abstract toggle */
+/* Abstract toggle styling */
 .wip-abstract { margin-top: .5rem; }
 .wip-abstract summary.badge {
   display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: .85rem;
   cursor: pointer;
   user-select: none;
 }
