@@ -121,10 +121,37 @@ nav a:hover::after {
 }
 
 
-/* Optional: bump size further on larger screens 
-@media (min-width: 992px) {
-  .wip { grid-template-columns: 320px 1fr 70px; }
-  .wip-thumb img { height: 300px; }
+/* ===== Global background (very light beige) ===== */
+:root {
+  --beige-50: #f9f5ee;   /* tweak to taste: #faf6ef, #f8f2e8, #fff8ef */
+  --beige-100: #fffaf2;  /* slightly lighter for cards/navs */
+  --beige-border: #e8dfd2;
 }
+
+/* Works everywhere */
+html, body { background-color: var(--beige-50); }
+
+/* If you're on Bootstrap 5, this cascades to many components */
+:root {
+  --bs-body-bg: var(--beige-50);
+  --bs-border-color: var(--beige-border);
 }
-*/
+
+/* Soften common white blocks (optional) */
+.navbar,
+.dropdown-menu,
+.card,
+.offcanvas,
+.modal-content {
+  background-color: var(--beige-100);
+}
+
+/* Code blocks & callouts (optional, so they don’t look stark white) */
+pre, code, .highlight {
+  background: #fffdf8;
+  border-color: var(--beige-border);
+}
+
+/* Lines and section underlines to match the palette */
+hr, .wip-sep { border-top: 2px solid var(--beige-border); }
+.section-title { border-bottom: 3px solid var(--beige-border); }
