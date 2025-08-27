@@ -56,18 +56,12 @@ nav a:hover::after {
 /* Wider thumbnail column so images can breathe */
 .wip { grid-template-columns: 220px 1fr 70px; }
 
-/* No crop: fit whole image inside */
-.wip-thumb { background: #f8f9fa; display:flex; align-items:center; justify-content:center; }
-.wip-thumb img,
-.wip-thumb .wip-pdf {
-  width: 100%;
-  height: 200px;        /* keep rows even; adjust to taste */
-  object-fit: contain;  /* <- key change */
-  border-radius: 6px;
+/* Thumbnail: no crop, no grey bands, fixed height */
+.wip-thumb { background: transparent; padding: 0; }
+.wip-thumb img { display: block; width: 100%; height: 200px; object-fit: contain; border-radius: 6px; }
+
+/* (Optional) make them a bit larger on desktop */
+@media (min-width: 768px) {
+  .wip-thumb img { height: 220px; }
 }
 
-/* Larger on desktop */
-@media (min-width: 768px) {
-  .wip { grid-template-columns: 260px 1fr 70px; }
-  .wip-thumb img, .wip-thumb .wip-pdf { height: 220px; }
-}
