@@ -84,8 +84,6 @@ Data source: _data/research.yml
 
         {%- for item in sorted -%}
           <div class="wip">
-            {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
-
             <div class="wip-body">
               <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
               {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
@@ -95,16 +93,18 @@ Data source: _data/research.yml
 
               <details class="wip-abstract">
                 <summary class="badge">Abstract</summary>
-
-                {%- if abs and abs != "" -%}
-                  <div class="wip-abstract-content">
-                    {{ abs | markdownify }}
-                  </div>
-                {%- else -%}
-                  <div class="wip-abstract-content text-muted">
-                    No abstract available yet.
-                  </div>
-                {%- endif -%}
+                <div class="wip-abstract-body">
+                  {%- if abs and abs != "" -%}
+                    <div class="wip-abstract-content">
+                      {{ abs | markdownify }}
+                    </div>
+                  {%- else -%}
+                    <div class="wip-abstract-content text-muted">
+                      No abstract available yet.
+                    </div>
+                  {%- endif -%}
+                  {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
+                </div>
               </details>
 
               {% assign L = item.links %}
@@ -131,28 +131,27 @@ Data source: _data/research.yml
             {%- for item in items -%}
               {%- if item.year == y -%}
                 <div class="wip">
-                  {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
-
                   <div class="wip-body">
                     <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
                     {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}
-                    <!--{% if item.abstract %}<div class="wip-abstract">{{ item.abstract }}</div>{% endif %}-->
                     {% if item.note %}<div class="wip-note"><em>{{ item.note }}</em></div>{% endif %}
-                    
+
                     {%- assign abs = item.abstract | default: item.abs | default: item.summary -%}
 
                     <details class="wip-abstract">
                       <summary class="badge">Abstract</summary>
-
-                      {%- if abs and abs != "" -%}
-                        <div class="wip-abstract-content">
-                          {{ abs | markdownify }}
-                        </div>
-                      {%- else -%}
-                        <div class="wip-abstract-content text-muted">
-                          No abstract available yet.
-                        </div>
-                      {%- endif -%}
+                      <div class="wip-abstract-body">
+                        {%- if abs and abs != "" -%}
+                          <div class="wip-abstract-content">
+                            {{ abs | markdownify }}
+                          </div>
+                        {%- else -%}
+                          <div class="wip-abstract-content text-muted">
+                            No abstract available yet.
+                          </div>
+                        {%- endif -%}
+                        {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
+                      </div>
                     </details>
 
                     {% assign L = item.links %}
@@ -175,7 +174,6 @@ Data source: _data/research.yml
           {%- comment -%}If no years provided, just list them{%- endcomment -%}
           {%- for item in items -%}
             <div class="wip">
-              {% if item.image %}<div class="wip-thumb"><img src="{{ item.image | prepend: site.baseurl }}" alt="thumbnail for {{ item.title | default: item.name }}"></div>{% endif %}
               <div class="wip-body">
                 <h3 class="wip-title">{{ item.title | default: item.name }}</h3>
                 {% if item.authors %}<div class="wip-authors">{{ item.authors }}</div>{% endif %}

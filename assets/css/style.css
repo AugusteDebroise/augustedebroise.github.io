@@ -46,8 +46,10 @@ nav a:hover::after {
 .year-header { margin: 2rem 0 1rem; font-weight: 700; }
 /*.wip { display: grid; grid-template-columns: 100px 1fr 70px; gap: 1rem; align-items: start; } */
 /*.wip-thumb img { width: 100%; height: auto; border-radius: 6px; object-fit: cover; } */
-.wip-title { margin: 0 0 .25rem; font-size: 1.05rem; line-height: 1.35; }
-.wip-authors, .wip-abstract, .wip-note { font-size: .95rem; }
+.wip-title { display: inline; margin: 0; font-size: 1.05rem; line-height: 1.35; }
+.wip-authors { display: inline; font-size: .95rem; margin-left: 0.3rem; }
+.wip-authors::after { content: ""; display: block; }
+.wip-abstract, .wip-note { font-size: .95rem; }
 .wip-links .badge { display: inline-block; padding: 2px 8px; border: 1px solid #ddd; border-radius: 999px; font-size: .85rem; text-decoration: none; margin-right: 6px; }
 .wip-meta { text-align: right; }
 .wip-year { font-weight: 700; font-variant-numeric: tabular-nums; }
@@ -176,26 +178,44 @@ code, kbd, pre, samp { font-family: var(--bs-font-monospace); }
 /* Remove the year column entirely */
 .wip-meta, .wip-year { display: none !important; }
 
-/* Two columns: text on the left, image on the right */
+/* Single column: full-width text body */
 .wip {
-  display: grid;
-  grid-template-columns: 1fr 320px;   /* text | image */
-  grid-template-areas: "body thumb";
-  gap: 1rem;
-  align-items: start;
+  display: block;
 }
 
-.wip-body  { grid-area: body; }
-.wip-thumb { grid-area: thumb; }
+/* Abstract body: text on the left, image on the right */
+.wip-abstract-body {
+  display: flex;
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 0.5rem;
+}
 
-/* Responsive: stack with text first on mobile */
+.wip-abstract-body .wip-abstract-content {
+  flex: 1 1 0;
+  margin-top: 0;
+}
+
+.wip-abstract-body .wip-thumb {
+  flex: 0 0 300px;
+}
+
+.wip-abstract-body .wip-thumb img {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 6px;
+}
+
+/* Responsive: stack on mobile */
 @media (max-width: 768px) {
-  .wip {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "body"
-      "thumb";
+  .wip-abstract-body {
+    flex-direction: column;
   }
-  .wip-thumb img,
-  .wip-thumb .wip-pdf { height: 220px; }
+  .wip-abstract-body .wip-thumb {
+    flex: none;
+    width: 100%;
+  }
 }

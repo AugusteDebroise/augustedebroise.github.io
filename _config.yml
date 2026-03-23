@@ -2,3 +2,21 @@ url: "https://augustedebroise.github.io/" # the base hostname & protocol for you
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Auguste Debroise" # the name of your site, e.g. ACME Corp.
 description: "Post-doctoral researcher at the University of Namur"
+
+author:
+  name: "Auguste Debroise"
+  email: "auguste.debroise@unamur.be"
+
+Linkedn:
+  username: AugusteDebroise
+  links:
+    - https://www.linkedin.com/in/auguste-debroise-phd-37a068a8/
+
+social:
+  name: Auguste Debroise
+  links:
+    - https://github.com/AugusteDebroise
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
