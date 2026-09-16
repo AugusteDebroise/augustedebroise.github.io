@@ -1,0 +1,146 @@
+/* style.css - HSG-inspired Jupyter Slides */
+
+/* Overall Background */
+.reveal {
+    background-color: #f9f9f9; /* Light gray background */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300; /* Lighter font weight for readability */
+  }
+  
+  /* Heading 1 (Main Titles) */
+  .reveal h1 {
+    color: #094215; /* HSG Dark green */
+    font-size: 2.5em;
+    font-weight: 600; /* Slightly bolder for emphasis */
+    text-transform: none; /* Avoid all caps, more modern */
+    letter-spacing: -0.02em;
+  }
+  
+  /* Heading 2 (Subtitles) */
+  .reveal h2 {
+    color: #0f7023; /* HSG Lighter green */
+    font-size: 2.0em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  /* Heading 3 (subSubtitles) */
+  .reveal h3 {
+    color: #149c2f; /* HSG Lighter green */
+    font-size: 2.0em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }  
+  /* Paragraph Text */
+  .reveal p {
+    color: #333;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+  }
+  
+  /* Lists (Unordered and Ordered) */
+  .reveal ul, .reveal ol {
+    margin-left: 1.5em;
+  }
+  
+  .reveal li {
+    margin-bottom: 0.5em;
+  }
+
+  /* custom comand*/
+  .reveal bcolor {
+    font-weight: bold;
+    color: #C96868;
+  }
+  
+  /* Links */
+  .reveal a {
+    color: #0f7023; /* HSG Lighter Blue */
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .reveal a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Code Blocks */
+  .reveal pre {
+    background-color: #f0f0f0; /* Light gray */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Inline Code */
+  .reveal code {
+    background-color: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  /* Blockquotes */
+  .reveal blockquote {
+    border-left: 5px solid #0f7023; /* HSG Lighter Blue */
+    padding-left: 1em;
+    font-style: italic;
+    margin: 1em 0;
+  }
+  
+  /* Horizontal Rule */
+  .reveal hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 1.5em 0;
+  }
+  
+  /*  Table Styles  */
+  .reveal table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 1em;
+  }
+  
+  .reveal th, .reveal td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+  
+  .reveal th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+  }
+  
+  /*  Image Styles  */
+  .reveal img {
+      max-width: 90%;
+      max-height: 80%;
+      border: none; /* Remove default borders on images */
+  }
+  
+  /*  Footer (Example: Slide Number)  */
+  .reveal .slide-number {
+      font-size: 0.7em;
+      color: #777;
+  }
+  
+  /*  Transition Styles (Optional)  */
+  .reveal .slides section {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .output_wrapper {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.output {
+    background-color: transparent !important;
+}
+
+.output_area {
+    padding: 0 !important;
+}

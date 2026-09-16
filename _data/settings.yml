@@ -8,6 +8,7 @@
 menu:
   - { name: 'Home', url: '/' }
   - { name: 'Research', url: '/research' }
+  - { name: 'Teaching', url: '/teaching' }
   - { name: 'Contact', url: '/contact' }
 
 #people:
