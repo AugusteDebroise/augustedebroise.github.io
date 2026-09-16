@@ -1,5 +1,5 @@
 modules:
-  - { name: 'Overview', url: '/teaching' }
+  - { name: 'Overview', url: '/teaching/data-management' }
   - { name: 'Module 1: Intro, Shell, Git', url: '/teaching/m1-intro' }
   - { name: 'Module 2: Basic Python', url: '/teaching/m2-basic-python' }
   - { name: 'Module 3: More Python', url: '/teaching/m3-more-python' }

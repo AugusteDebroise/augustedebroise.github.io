@@ -17,4 +17,4 @@ title: "General Resources"
 - [Data Analysis for Business, Economics, and Policy](https://gabors-data-analysis.com/)
 - *Python pour les data-scientists et économistes* by Lino Galiana (see [website](https://pythonds.linogaliana.fr/))
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

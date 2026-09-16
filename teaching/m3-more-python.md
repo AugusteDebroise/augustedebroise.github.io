@@ -24,4 +24,4 @@ title: "Module 3: More Python"
 
 After this lesson, you should be able to write and use for loops, if conditions, and your own functions in Python.
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

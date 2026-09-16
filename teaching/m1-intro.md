@@ -48,4 +48,4 @@ This session is concerned with navigating the file system in a shell and your fi
 
 - Students come up with one solution as a group. One person types, everyone contributes
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

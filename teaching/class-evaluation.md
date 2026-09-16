@@ -36,4 +36,4 @@ The project should use git and be made available on GitHub.
 - **Project pitch:** a short discussion to confirm the project is feasible within the time frame.
 - **Final presentation:** students present the project to the instructor(s), covering the question, the data, and the descriptive and modelling steps.
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

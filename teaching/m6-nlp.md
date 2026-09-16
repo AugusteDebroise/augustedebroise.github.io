@@ -17,4 +17,4 @@ After this lesson, you should be able to:
 - Represent a text as a vector using different methods
 - Train a classifier on a text dataset
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

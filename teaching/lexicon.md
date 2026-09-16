@@ -32,4 +32,4 @@ Anaconda is a distribution of the Python programming language that includes seve
 - Selenium
 - scikit-learn
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

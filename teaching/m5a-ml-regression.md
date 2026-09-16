@@ -30,4 +30,4 @@ After this lesson, you should be able to:
   - k-nearest neighbors
 - Use the `scikit-learn` library to train, select and use a model
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

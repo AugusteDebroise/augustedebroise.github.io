@@ -50,4 +50,4 @@ After this lesson, you should be able to:
 - Identify common errors in Python code
 - Use tracebacks to debug code
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

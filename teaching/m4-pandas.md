@@ -45,4 +45,4 @@ After this lesson, you should be able to:
 
 - Jointly fixing errors with your peers
 
-[Back to Teaching](/teaching)
+[Back to Data Management](/teaching/data-management)

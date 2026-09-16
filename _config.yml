@@ -20,3 +20,9 @@ social:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "teaching/"
+    values:
+      container: "col-lg-11"
