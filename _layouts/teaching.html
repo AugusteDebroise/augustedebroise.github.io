@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="row g-5 mb-5">
+  <div class="col-md-3">
+    <nav class="teaching-sidebar">
+      <ul class="list-unstyled">
+        {% for item in site.data.teaching.modules %}
+        <li class="mb-2">
+          <a href="{{ item.url }}" class="text-decoration-none{% if page.url == item.url %} fw-bold{% endif %}">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="col-md-9">
+    <h3 class="fw-bold border-bottom pb-3 mb-5">{{ page.title }}</h3>
+    {{ content }}
+  </div>
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: teaching
 title: "Module 1: Introduction, Shell, Git"
 ---
 

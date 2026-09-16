@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: teaching
 title: "Teaching"
 ---
 
@@ -19,16 +19,18 @@ This course aims to teach the basics of data management and analysis using Pytho
 
 ### Course schedule
 
-| # week | Date | Module |
-|:---:|---|---|
-| 1 | TBD | [Module 1: Intro, Shell, Git](/teaching/m1-intro) |
-| 2 | TBD | [Module 2: Basic Python](/teaching/m2-basic-python) |
-| 3 | TBD | [Module 3: More Python](/teaching/m3-more-python) |
-| 4 | TBD | [Module 4: Pandas](/teaching/m4-pandas) |
-| 5 | TBD | [Module 5a: ML Regressions](/teaching/m5a-ml-regression) |
-| 6 | TBD | [Module 5b: ML Classifications](/teaching/m5b-ml-classification) |
-| 7 | TBD | [Module 5c: ML Tree Methods](/teaching/m5c-ml-tree-methods) |
-| 8 | TBD | [Module 6: Natural Language Processing](/teaching/m6-nlp) |
+| Date | Duration | Format | Session |
+|---|:---:|---|---|
+| 21/09/2026 | 3h | In person | [Module 1: Intro, Shell, Git](/teaching/m1-intro) & [Module 2: Basic Python](/teaching/m2-basic-python) |
+| 28/09/2026 | 3h | In person | [Module 2: Basic Python](/teaching/m2-basic-python) (cont.) & [Module 4: Pandas](/teaching/m4-pandas) |
+| 05/10/2026 | 3h | In person | [Module 3: More Python](/teaching/m3-more-python) & Intro to Machine Learning |
+| 12/10/2026 | 2h | Distance | [Module 5a: ML Regression](/teaching/m5a-ml-regression) |
+| 19/10/2026 | 2h | Distance | [Module 5b: ML Classification](/teaching/m5b-ml-classification) & Intro to NLP |
+| 26/10/2026 | — | — | No class |
+| 02/11/2026 | 3h | In person | [Module 6: Natural Language Processing](/teaching/m6-nlp) |
+| 09/11/2026 | — | — | No class |
+| 16/11/2026 | 2h | In person | ML & NLP Challenge |
+| 23/11/2026 | 2h | In person | Project presentation |
 
 ### Useful links
 
