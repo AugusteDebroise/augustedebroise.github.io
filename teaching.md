@@ -3,29 +3,36 @@ layout: page
 title: "Teaching"
 ---
 
-## Data Management
-
-**Instructor:** Auguste Debroise, Post-doctoral researcher, Economics, University of Namur — [auguste.debroise@unamur.be](mailto:auguste.debroise@unamur.be)
+Welcome to the website of the Data Management class, taught by Auguste Debroise.
 
 *Course materials adapted from Malka Guillot's [Data Management](https://malkaguillot.github.io/ECON2206-Data-Management/) course.*
 
-### Overview
+## Data Management
 
-This class teaches the basics of data management and analysis using Python. No prior programming knowledge is required. It covers data collection, munging, and modeling, with applications to economics.
+### Instructor
 
-### Schedule
+- Auguste Debroise, Post-doctoral researcher, Economics, University of Namur, [auguste.debroise@unamur.be](mailto:auguste.debroise@unamur.be)
 
-| Module | Topic | Materials |
-|---|---|---|
-| 1 | Introduction, Shell, Git | [Slides & notes](/teaching/m1-intro) |
-| 2 | Basic Python | [Slides & notes](/teaching/m2-basic-python) |
-| 3 | More Python | [Slides & notes](/teaching/m3-more-python) |
-| 4 | Pandas | [Slides & notes](/teaching/m4-pandas) |
-| 5a | Machine Learning: Regression | [Slides & notes](/teaching/m5a-ml-regression) |
-| 5b | Machine Learning: Classification | [Slides & notes](/teaching/m5b-ml-classification) |
-| 5c | Machine Learning: Tree Methods | [Slides & notes](/teaching/m5c-ml-tree-methods) |
-| 6 | Natural Language Processing | [Slides & notes](/teaching/m6-nlp) |
+### Course description, class format
 
-### Resources
+This course aims to teach the basics of data management and analysis using Python. It requires no prior knowledge of computer programming. Students will acquire skills in data collection, munging, modeling.
 
-- [Course materials repository (GitHub)](https://github.com/AugusteDebroise/class-ressources)
+### Course schedule
+
+| # week | Date | Module |
+|:---:|---|---|
+| 1 | TBD | [Module 1: Intro, Shell, Git](/teaching/m1-intro) |
+| 2 | TBD | [Module 2: Basic Python](/teaching/m2-basic-python) |
+| 3 | TBD | [Module 3: More Python](/teaching/m3-more-python) |
+| 4 | TBD | [Module 4: Pandas](/teaching/m4-pandas) |
+| 5 | TBD | [Module 5a: ML Regressions](/teaching/m5a-ml-regression) |
+| 6 | TBD | [Module 5b: ML Classifications](/teaching/m5b-ml-classification) |
+| 7 | TBD | [Module 5c: ML Tree Methods](/teaching/m5c-ml-tree-methods) |
+| 8 | TBD | [Module 6: Natural Language Processing](/teaching/m6-nlp) |
+
+### Useful links
+
+- Code, data and slides can be found on the [GitHub repository of the course](https://github.com/AugusteDebroise/class-ressources) (including class materials such as slides and notebooks)
+- Details on [class evaluation](/teaching/class-evaluation)
+- A [lexicon](/teaching/lexicon) listing the tools and packages used
+- A list of [general resources](/teaching/general-resources)

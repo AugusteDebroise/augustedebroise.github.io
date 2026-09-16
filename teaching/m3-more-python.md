@@ -3,10 +3,25 @@ layout: page
 title: "Module 3: More Python"
 ---
 
-<p><a href="/teaching/data-management/m3/m3-more-python.slides.html" target="_blank">View slides</a></p>
+### Resources
 
-[Jupyter notebook (GitHub)](https://github.com/AugusteDebroise/class-ressources/blob/main/lectures/m3/m3-more-python.ipynb)
+- [Slides](/teaching/data-management/m3/m3-more-python.slides.html) on Python basics
+- [Notebook (GitHub)](https://github.com/AugusteDebroise/class-ressources/blob/main/lectures/m3/m3-more-python.ipynb)
+- [Exercises (GitHub)](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/m3-exercises)
 
-[Exercises (GitHub)](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/m3-exercises)
+#### Organisation
+
+- Hour 1: concepts 1, 2
+- Hour 2: concepts 3
+
+### Concepts
+
+1. For loops
+2. If conditions
+3. Defining functions
+
+### Learning objectives
+
+After this lesson, you should be able to write and use for loops, if conditions, and your own functions in Python.
 
 [Back to Teaching](/teaching)
