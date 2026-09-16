@@ -2,12 +2,14 @@ modules:
   - { name: 'Overview', url: '/teaching/data-management' }
   - { name: 'Module 1: Intro, Shell, Git', url: '/teaching/m1-intro' }
   - { name: 'Module 2: Basic Python', url: '/teaching/m2-basic-python' }
-  - { name: 'Module 3: More Python', url: '/teaching/m3-more-python' }
-  - { name: 'Module 4: Pandas', url: '/teaching/m4-pandas' }
+  - { name: 'Module 3: Pandas', url: '/teaching/m4-pandas' }
+  - { name: 'Module 4: More Python', url: '/teaching/m3-more-python' }
   - { name: 'Module 5a: ML Regression', url: '/teaching/m5a-ml-regression' }
   - { name: 'Module 5b: ML Classification', url: '/teaching/m5b-ml-classification' }
   - { name: 'Module 5c: ML Tree Methods', url: '/teaching/m5c-ml-tree-methods' }
   - { name: 'Module 6: NLP', url: '/teaching/m6-nlp' }
+  - { name: 'ML & NLP Challenge', url: '/teaching/ml-nlp-challenge' }
+  - { name: 'Class Project', url: '/teaching/project' }
   - { name: 'Class Evaluation', url: '/teaching/class-evaluation' }
   - { name: 'Lexicon', url: '/teaching/lexicon' }
   - { name: 'General Resources', url: '/teaching/general-resources' }

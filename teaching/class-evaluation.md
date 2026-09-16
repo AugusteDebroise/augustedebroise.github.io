@@ -3,37 +3,29 @@ layout: teaching
 title: "Class Evaluation"
 ---
 
-*Structure adapted from Malka Guillot's course — grading weights and deadlines below are placeholders, to be confirmed.*
+## Homeworks [5%]
 
-## Grading
+There will be 2 homeworks during the semester. They are individual. You get all the points if you hand them in (and your answers are correct) on time, and 0 otherwise.
 
-| Component | Weight |
+## NLP+ML challenge [15%]
+
+This is a 3-hour in-class challenge where teams of up to 2 students will build an end-to-end pipeline. The challenge starts in class, and students have 48 hours after the class to refine their code and push it to a GitHub repository. All details are available on the [challenge page](/teaching/ml-nlp-challenge).
+
+## Course project [80%]
+
+The bulk of the evaluation arises from the course project that students have to hand in. This is a computing project to be realized by groups of 2 persons. All details are available on the [project page](/teaching/project).
+
+## Grade decomposition
+
+| Detail | Grade decomposition |
 |---|:---:|
-| Class project (hand-in) | TBD |
-| — Data management | TBD |
-| — Descriptive analysis | TBD |
-| — Modeling (ML and/or NLP) | TBD |
-| — Code format (clean code and GitHub) | TBD |
-| — Oral presentation | TBD |
-| Project pitch | TBD |
-| Active class participation | TBD |
-
-## Course project
-
-### In short
-
-The bulk of the evaluation arises from a course project that students hand in. This is a computing project realized in groups. The content is free, but should include:
-
-- The use of several datasets that are merged and cleaned (collected from the web via scraping/API, or downloaded from existing databases)
-- Descriptive statistics with meaningful visualisation
-- Modelling (ML and/or NLP) with interpretation of the results
-
-The project should use git and be made available on GitHub.
-
-### Organisation
-
-- **Hand-in:** a report in the form of a Jupyter Notebook (or a `Dash`/`Streamlit` application), hosted on a GitHub repository with code, data, slides, and a `README.md` explaining how to run it.
-- **Project pitch:** a short discussion to confirm the project is feasible within the time frame.
-- **Final presentation:** students present the project to the instructor(s), covering the question, the data, and the descriptive and modelling steps.
+| **Class project** | **80%** |
+| — Data management | 15% |
+| — Descriptive analysis | 15% |
+| — Modeling (ML and/or NLP) | 15% |
+| — Code format (clean code and GitHub) | 15% |
+| — Oral presentation (individual + group component) | 20% |
+| **Homeworks** | **5%** |
+| **NLP+ML challenge** (group) | **15%** |
 
 [Back to Data Management](/teaching/data-management)

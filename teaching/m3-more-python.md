@@ -1,6 +1,6 @@
 ---
 layout: teaching
-title: "Module 3: More Python"
+title: "Module 4: More Python"
 ---
 
 ### Resources

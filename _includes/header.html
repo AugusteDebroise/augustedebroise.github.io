@@ -5,7 +5,7 @@
       <span class="fs-4 fw-bold">Data Management</span>
     </a>
     <a href="{{ site.github.url }}/teaching/data-management" class="d-flex align-items-center text-decoration-none">
-      <span>A course taught by Auguste Debroise</span>
+      <span>HEC Liège — ECON2206</span>
     </a>
     {% else %}
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
@@ -16,9 +16,11 @@
     </a>
     {% endif %}
   </div>
+  {% unless page.layout == 'teaching' %}
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
   </nav>
+  {% endunless %}
 </header>

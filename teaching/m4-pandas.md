@@ -1,6 +1,6 @@
 ---
 layout: teaching
-title: "Module 4: Pandas"
+title: "Module 3: Pandas"
 ---
 
 ### Resources

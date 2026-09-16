@@ -3,14 +3,14 @@ layout: teaching
 title: "Data Management"
 ---
 
-Welcome to the website of the Data Management class, taught by Auguste Debroise.
+Welcome to the website of the ECON2206 Data Managment class of HEC Liège.
 
 *Course materials adapted from Malka Guillot's [Data Management](https://malkaguillot.github.io/ECON2206-Data-Management/) course.*
 
 ### Instructors
 
 - Auguste Debroise, Invited Professor, Economics, University of Namur, [auguste.debroise@unamur.be](mailto:auguste.debroise@unamur.be)
-- Pauline Colle, PhD Candidate
+- Pauline Colle, PhD Candidate, [Pauline.Colle@uliege.be](mailto:Pauline.Colle@uliege.be)
 
 ### Course description, class format
 
@@ -21,19 +21,21 @@ This course aims to teach the basics of data management and analysis using Pytho
 | Date | Duration | Format | Session |
 |---|:---:|---|---|
 | 21/09/2026 | 3h | In person | [Module 1: Intro, Shell, Git](/teaching/m1-intro) & [Module 2: Basic Python](/teaching/m2-basic-python) |
-| 28/09/2026 | 3h | In person | [Module 2: Basic Python](/teaching/m2-basic-python) (cont.) & [Module 4: Pandas](/teaching/m4-pandas) |
-| 05/10/2026 | 3h | In person | [Module 3: More Python](/teaching/m3-more-python) & Intro to Machine Learning |
+| 28/09/2026 | 3h | In person | [Module 2: Basic Python](/teaching/m2-basic-python) (cont.) & [Module 3: Pandas](/teaching/m4-pandas) |
+| 05/10/2026 | 3h | In person | [Module 4: More Python](/teaching/m3-more-python) & Intro to Machine Learning |
 | 12/10/2026 | 2h | Distance | [Module 5a: ML Regression](/teaching/m5a-ml-regression) |
 | 19/10/2026 | 2h | Distance | [Module 5b: ML Classification](/teaching/m5b-ml-classification) & Intro to NLP |
 | 26/10/2026 | — | — | No class |
 | 02/11/2026 | 3h | In person | [Module 6: Natural Language Processing](/teaching/m6-nlp) |
 | 09/11/2026 | — | — | No class |
-| 16/11/2026 | 2h | In person | ML & NLP Challenge |
-| 23/11/2026 | 2h | In person | Project presentation |
+| 16/11/2026 | 2h | In person | [ML & NLP Challenge](/teaching/ml-nlp-challenge) |
+| 23/11/2026 | 2h | In person | [Project presentation](/teaching/project) |
 
 ### Useful links
 
 - Code, data and slides can be found on the [GitHub repository of the course](https://github.com/AugusteDebroise/class-ressources) (including class materials such as slides and notebooks)
 - Details on [class evaluation](/teaching/class-evaluation)
+- The [ML & NLP challenge](/teaching/ml-nlp-challenge)
+- The [class project](/teaching/project)
 - A [lexicon](/teaching/lexicon) listing the tools and packages used
 - A list of [general resources](/teaching/general-resources)
