@@ -5,9 +5,9 @@ title: "Module 4: More Python"
 
 ### Resources
 
-- [Slides](/teaching/data-management/m3/m3-more-python.slides.html) on Python basics
-- [Notebook (GitHub)](https://github.com/AugusteDebroise/class-ressources/blob/main/lectures/m3/m3-more-python.ipynb)
-- [Exercises (GitHub)](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/m3-exercises)
+- [Slides](/teaching/data-management/m4/m4-more-python.slides.html) on Python basics
+- [Notebook (GitHub)](https://github.com/AugusteDebroise/class-ressources/blob/main/lectures/m4/m4-more-python.ipynb)
+- [Exercises (GitHub)](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/m4-exercises)
 
 #### Organisation
 

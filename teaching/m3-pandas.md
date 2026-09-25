@@ -5,9 +5,9 @@ title: "Module 3: Pandas"
 
 ### Resources
 
-- [Slides](/teaching/data-management/m4/m4-pandas.slides.html)
-- [Notebook (GitHub)](https://github.com/AugusteDebroise/class-ressources/blob/main/lectures/m4/m4-pandas.ipynb)
-- [Exercises (GitHub)](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/m4-exercises)
+- [Slides](/teaching/data-management/m3/m3-pandas.slides.html)
+- [Notebook (GitHub)](https://github.com/AugusteDebroise/class-ressources/blob/main/lectures/m3/m3-pandas.ipynb)
+- [Exercises (GitHub)](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/m3-exercises)
 
 #### Organisation
 

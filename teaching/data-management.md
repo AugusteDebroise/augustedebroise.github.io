@@ -21,8 +21,8 @@ This course aims to teach the basics of data management and analysis using Pytho
 | Date | Duration | Format | Session |
 |---|:---:|---|---|
 | 21/09/2026 | 3h | In person | [Module 1: Intro, Shell, Git](/teaching/m1-intro) & [Module 2: Basic Python](/teaching/m2-basic-python) |
-| 28/09/2026 | 3h | In person | [Module 2: Basic Python](/teaching/m2-basic-python) (cont.) & [Module 3: Pandas](/teaching/m4-pandas) |
-| 05/10/2026 | 3h | In person | [Module 4: More Python](/teaching/m3-more-python) & Intro to Machine Learning |
+| 28/09/2026 | 3h | In person | [Module 2: Basic Python](/teaching/m2-basic-python) (cont.) & [Module 3: Pandas](/teaching/m3-pandas) |
+| 05/10/2026 | 3h | In person | [Module 4: More Python](/teaching/m4-more-python) & Intro to Machine Learning |
 | 12/10/2026 | 2h | Distance | [Module 5a: ML Regression](/teaching/m5a-ml-regression) |
 | 19/10/2026 | 2h | Distance | [Module 5b: ML Classification](/teaching/m5b-ml-classification) & Intro to NLP |
 | 26/10/2026 | — | — | No class |
