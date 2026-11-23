@@ -5,7 +5,7 @@ title: "Data Management"
 
 Welcome to the website of the ECON2206 Data Managment class of HEC Liège.
 
-*Course materials adapted from Malka Guillot's [Data Management](https://malkaguillot.github.io/ECON2206-Data-Management/) course.*
+*Course materials adapted from Malka Guillot's Data Management course.*
 
 ### Instructors
 
