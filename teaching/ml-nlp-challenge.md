@@ -5,25 +5,30 @@ title: "ML + NLP Challenge"
 
 ### Project Overview
 
-This is a **3-hour in-class challenge** where teams of up to 2 students will build an end-to-end pipeline that combines Natural Language Processing with a Machine-Learning classifier to predict the political orientation (e.g., left, centre, right) of news articles.
+This is a **3-hour in-class challenge** where teams of up to 2 students will build an end-to-end pipeline that combines Natural Language Processing with a Machine-Learning classifier to predict the political orientation of news articles (`left`, `lean left`, `center`, `lean right`, `right`).
 
-The deliverable is a **working model**, a **performance evaluation**, and **reproducible code**.
+All teams work on **the same data**, so that differences in results come only from your methodological choices: cleaning, preprocessing, features, model and tuning.
+
+The deliverable is a **working model**, **predictions on a hidden test set**, and **reproducible code**.
 
 ### Timeline & Milestones
 
 | Phase | Duration | What Happens | Deliverables |
 |---|---|---|---|
-| **In-class challenge** | **3 hours** (during class) | Instructors available for hints. Explore data, set up a baseline, iterate on models. | A runnable prototype (script or notebook) that trains a model and outputs predictions on a validation split. |
-| **Immediate check-in** | **≈ 15 min** before the challenge ends | Each group announces the best-performing model discovered (validation accuracy/F1). Brief discussion of challenges and next steps. | One-sentence summary of the top model and its metric. |
-| **Post-class refinement** | **48 hours** (deadline: TBD) | Continue training, fine-tune hyper-parameters, conduct error analysis, improve reproducibility. No further instructor input is allowed. | Fully committed GitHub repository (see below) with a notebook that follows the good-practice guidelines. |
+| **In-class challenge** | **3 hours** (during class) | Instructors available for hints. Explore and clean the data, set up a baseline, iterate on models. | A runnable prototype (notebook) that trains a model, evaluates it on your own validation split, and predicts the test set. |
+| **Immediate check-in** | **≈ 15 min** before the challenge ends | Each group announces the best-performing model discovered (validation macro-F1). Brief discussion of challenges and next steps. | One-sentence summary of the top model and its metric. |
+| **Post-class refinement** | **48 hours** (deadline: TBD) | Continue training, fine-tune hyper-parameters, conduct error analysis, improve reproducibility. No further instructor input is allowed. | A GitHub repository (see below) with a notebook that follows the good-practice guidelines and your test-set predictions. |
 
-### Materials & Repository
+### Starter Kit
 
-- Each team will receive a private GitHub Classroom repository (link: TBD) containing:
-  - `data/` – sample training/validation CSV files
-  - `src/` – starter scripts for data loading, preprocessing, and a baseline model
-  - `requirements.txt` – required Python packages (scikit-learn, transformers, pandas, …)
-  - `README.md` – template with sections for description, setup, results, and usage
+The starter kit is in the [course repository](https://github.com/AugusteDebroise/class-ressources/tree/main/exercises/ml-nlp-challenge) and will also be sent by email. It contains:
+
+- `README.md` – detailed instructions and rules: **read it first**
+- `starter_notebook.ipynb` – notebook skeleton with the sections to complete and a **baseline model** (TF-IDF + Logistic Regression)
+- `data/train_dataset.csv` – 5,600 labelled articles (`id`, `Title`, `Text`, `Bias`)
+- `data/test_dataset.csv` – 2,183 articles **without labels** (`id`, `Title`, `Text`): you predict them, and your score is computed on their hidden labels
+
+Both datasets are **raw**: the articles were scraped from the web and have not been cleaned. Inspecting and cleaning them is part of the challenge. Since the test set has no labels, **split the training set yourselves** to compare your models, and predict **every** row of the test set.
 
 ### Good Notebook Practices
 
@@ -54,23 +59,25 @@ To ensure that the submitted notebook can be executed by anyone (instructor, fut
 
 ### Evaluation Criteria
 
-- **Correctness** – code runs end-to-end and reproduces reported numbers
-- **Performance** – validation metric (accuracy / macro-F1) compared to baseline
-- **Pipeline completeness** – data preprocessing, model training, prediction, and serialization
+- **Performance** – macro-F1 (accuracy also reported) on the hidden labels of the test set, compared to the baseline
+- **Correctness** – code runs end-to-end and reproduces the submitted predictions
+- **Pipeline completeness** – data cleaning, preprocessing, model training, prediction, and serialization
 - **Documentation & reproducibility** – clear README, environment file, commit history, and notebook best practices
-- **Ethical awareness** – brief discussion of bias, data limits, or potential misuse
+- **Critical thinking** – brief discussion of how the labels were produced, what your model may really be learning, the limits of the data, and potential misuse
+
+Using any other copy of this dataset or of its labels is cheating. Notebooks may be re-run to check that they reproduce the submitted predictions.
 
 ### Submission Procedure
 
-1. Commit all source files, notebooks, `requirements.txt`, and the final `README.md` to the main branch of your GitHub Classroom repo.
-2. Tag the final commit with `v1.0-final` to help instructors locate the correct version.
-3. Ensure the repository is visible to teaching staff.
-4. No additional zip files or external links are required.
+1. Create a GitHub repository for your team (it can be private) and add the instructor (`AugusteDebroise`) as a collaborator.
+2. Commit your notebook, `requirements.txt`, the final `README.md`, and `data/test_dataset_predicted.csv` (the test set with an added `Bias` column holding your prediction for every row; the starter notebook writes it for you).
+3. Tag the final commit with `v1.0-final` to help instructors locate the correct version.
+4. Email the repository link to the instructor before the deadline.
 
 ### Helpful Tips
 
-- Start with the baseline (e.g., TF-IDF + Logistic Regression) to obtain a quick score, then try a more complex approach (e.g., fine-tuned DistilBERT) if time permits.
-- Modularise the pipeline using `sklearn.pipeline.Pipeline` objects or separate functions — this simplifies later refinements.
+- Start with the baseline (TF-IDF + Logistic Regression) to obtain a quick score, then try a more complex approach (e.g., fine-tuned DistilBERT) if time permits.
+- Modularise the pipeline using `sklearn.pipeline.Pipeline` objects or separate functions — this simplifies later refinements and guarantees the same preprocessing at training and prediction time.
 - Document any external resources (pre-trained weights, extra libraries) in the README.
 - Keep the notebook clean and runnable from top to bottom; remove stray print statements or debugging code before the final commit.
 
