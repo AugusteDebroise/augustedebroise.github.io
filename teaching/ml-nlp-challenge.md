@@ -37,7 +37,7 @@ To ensure that the submitted notebook can be executed by anyone (instructor, fut
 **1. Reproducibility**
 
 - Set a global random seed at the top of the notebook (e.g., `np.random.seed(42); torch.manual_seed(42)`)
-- Record the exact package versions used (e.g., `pip freeze > requirements.txt`)
+- Record the exact package versions used (e.g., print them in the Setup section, as the starter notebook does)
 - Store any trained artefacts (model weights, vectorizers) using deterministic filenames (e.g., `model_v1.pkl`)
 
 **2. Run From Start to Finish**
@@ -62,7 +62,7 @@ To ensure that the submitted notebook can be executed by anyone (instructor, fut
 - **Performance** – macro-F1 (accuracy also reported) on the hidden labels of the test set, compared to the baseline
 - **Correctness** – code runs end-to-end and reproduces the submitted predictions
 - **Pipeline completeness** – data cleaning, preprocessing, model training, prediction, and serialization
-- **Documentation & reproducibility** – clear README, environment file, and notebook best practices
+- **Documentation & reproducibility** – package versions recorded and notebook best practices
 - **Critical thinking** – brief discussion of how the labels were produced, what your model may really be learning, the limits of the data, and potential misuse
 
 Using any other copy of this dataset or of its labels is cheating. Notebooks may be re-run to check that they reproduce the submitted predictions.
@@ -71,12 +71,10 @@ Using any other copy of this dataset or of its labels is cheating. Notebooks may
 
 **Deadline: 25 November 2026, 23:59.** Submissions are made on **Lola**, **one submission per group**. Nothing needs to be uploaded to GitHub.
 
-Upload a single `.zip` file containing:
+Upload two files:
 
-1. your completed notebook, runnable top to bottom;
-2. `test_dataset_predicted.csv`: the test set with an added `Bias` column holding your prediction for every row (the starter notebook writes it for you);
-3. a `README.md`: team members, description of your approach, setup instructions, results;
-4. a `requirements.txt` (`pip freeze > requirements.txt`).
+1. your completed notebook (`.ipynb`), runnable top to bottom, with the team members' names at the top;
+2. `test_dataset_predicted.csv`: the test set with an added `Bias` column holding your prediction for every row (the starter notebook writes it for you).
 
 You do not need to include the training and test datasets.
 
@@ -84,7 +82,7 @@ You do not need to include the training and test datasets.
 
 - Start with the baseline (TF-IDF + Logistic Regression) to obtain a quick score, then try a more complex approach (e.g., fine-tuned DistilBERT) if time permits.
 - Modularise the pipeline using `sklearn.pipeline.Pipeline` objects or separate functions — this simplifies later refinements and guarantees the same preprocessing at training and prediction time.
-- Document any external resources (pre-trained weights, extra libraries) in the README.
+- Document any external resources (pre-trained weights, extra libraries) in the notebook.
 - Keep the notebook clean and runnable from top to bottom; remove stray print statements or debugging code before submitting.
 
 ### Learning Objectives
